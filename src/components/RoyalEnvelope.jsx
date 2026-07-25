@@ -1,4 +1,4 @@
-import { ArrowRight, HandPointer } from 'lucide-react'
+import { ArrowRight, MousePointerClick } from "lucide-react"
 
 export default function RoyalEnvelope({ phase, onUnseal, onEnter }) {
   const isOpening = phase === 'opening'
@@ -47,7 +47,7 @@ export default function RoyalEnvelope({ phase, onUnseal, onEnter }) {
 
       {!isInvitation && (
         <button className="unseal-prompt" type="button" onClick={onUnseal} disabled={isOpening}>
-          <HandPointer size={20} />
+          <MousePointerClick size={20} />
           <span>{isOpening ? 'Unsealing your invitation…' : 'Tap to unseal your royal invitation'}</span>
         </button>
       )}
