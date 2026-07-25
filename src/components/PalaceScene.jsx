@@ -31,18 +31,24 @@ export default function PalaceScene({ phase, onContinue, children }) {
         {Array.from({ length: 7 }, (_, i) => <i className="floating-lotus" key={i} style={{ left: `${10 + i * 13}%`, animationDelay: `${i * -0.6}s` }} />)}
       </div>
 
-      {phase === 'palace' && (
-        <div className="palace-intro">
-          <span className="eyebrow">Welcome to REEVA</span>
-          <h1>A new royal chapter begins soon.</h1>
-          <p>Be among the first to discover our debut collection.</p>
-          <button className="primary-button" type="button" onClick={onContinue}>
-            Request Exclusive Access <ArrowRight size={17} />
-          </button>
-        </div>
-      )}
+{phase === 'palace' && (
+  <div className="palace-intro">
+    <span className="eyebrow">Welcome to REEVA</span>
+    <h1>A new royal chapter begins soon.</h1>
+    <p>Be among the first to discover our debut collection.</p>
 
-      {children && <div className="palace-overlay">{children}</div>}
-    </div>
-  )
-}
+    <button
+      className="primary-button"
+      type="button"
+      onClick={onContinue}
+    >
+      Request Exclusive Access <ArrowRight size={17} />
+    </button>
+  </div>
+)}
+
+{overlayOpen && (
+  <div className="palace-overlay">
+    {children}
+  </div>
+)}
