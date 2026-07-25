@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" role="img" aria-label="REEVA mark">
+  <defs>
+    <linearGradient id="g" x1="16" y1="8" x2="112" y2="120" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#F4D78A"/>
+      <stop offset=".5" stop-color="#C99A3E"/>
+      <stop offset="1" stop-color="#8E6420"/>
+    </linearGradient>
+  </defs>
+  <rect width="128" height="128" rx="28" fill="#071411"/>
+  <path d="M64 19c8 12 15 20 27 26-9 3-17 8-27 17-10-9-18-14-27-17 12-6 19-14 27-26Z" fill="none" stroke="url(#g)" stroke-width="4"/>
+  <path d="M42 96V48h23c14 0 23 8 23 20 0 9-5 16-14 19l17 9H77L61 88h-7v8H42Zm12-18h10c7 0 11-3 11-9s-4-9-11-9H54v18Z" fill="url(#g)"/>
+</svg>
